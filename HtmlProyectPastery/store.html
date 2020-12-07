@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="js/enviarCorreo.js"></script>
+
+    <title>Julis Pastry-Contacto</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">Pasteleria Artesanal</span>
+      <span class="site-heading-lower">Juli´s Pastery</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Inicio
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="about.html">Acerca de Nosotros</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="products.html">Productos</a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="store.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-section cta mb-5">
+      <div class="container">
+        <div class="container">
+
+        </div>
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              
+              <h2 class="section-heading mb-5">
+                <span class="section-heading-upper">Habla con nosotros!</span>
+                <span class="section-heading-lower">Pide por nuestros medios nuestros productos!</span>
+              </h2>
+              
+              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Instagram
+                  <span class="ml-auto">@Juli´s.pastry</span>
+                </li>
+                <li></li>
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  Whatsapp
+                  <span class="ml-auto">318999-Pasteleria</span>
+                </li>
+                  
+              </ul>
+              <p class="address mb-5">
+                <em>
+                  <strong>Se reciben pedidos via telefonica por el:</strong>
+                  <br>
+                  318999-Pasteleria
+                </em>
+                <p><button type="button" onclick="window.location.href='https://www.instagram.com/julis.pastry/'"><img  src="img/intslogo.png" alt="" width="100" height="100"></button> 
+                  <button type="button" onclick="window.location.href='https://api.whatsapp.com/message/7FQD37CQI4C3A1'"><img src="img/wplogo.png" alt="" width="100" height="100"> </button> </p>
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section ctasp  ">
+      <div class="container">
+        <div class="about-heading-content ">
+          <div class="row ">
+            <div class="col-xl-9 col-lg-10 mx-auto ">
+              <div class="bgsp-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Envianos Un correo!</span>
+                </h2>
+                <div> <form action="enviarCorreo.js" method="GET">
+                  <p>Nombre: <input type="text" name="Nombre" size="40"> </p>
+                  <p>Identificacion: <input type="text" name="Id" size="40">
+                  <select name="Tipo Documento" size="1">
+                    <option selected value="1">Pasaporte</option>
+                    <option selected value="2">Cedula de Ciuddania</option>
+                    <option selected value="3">Tarjeta de Identidad</option>
+                    <option selected value="10">Cedula Extranjera</option>
+                    <option selected value="11">Elije Tipo de Documento</option>
+                  </select>
+                 </p>
+                <p>Correo: <input type="text" name="email" size="40"> </p>
+                <p>Mensaje:</p>
+                <p><textarea name="mensaje" rows="5" cols="80"></textarea></p>
+                <p><input type="button" value="Enviar" onclick="enviarCorreos()"> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; Juli´s Pastry 2018</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script to highlight the active date in the hours list -->
+    <script>
+      $('.list-hours li').eq(new Date().getDay()).addClass('today');
+    </script>
+
+  </body>
+
+</html>
